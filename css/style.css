@@ -90,10 +90,20 @@ body {
     background-image: radial-gradient(circle at right, #2a1154 0%, var(--purple-bg) 70%);
 }
 
+/*.hero::before{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    inset: 0;*/
+/*    background: linear-gradient(-45deg, #050505, #0d0d1a, #1a0f2a, #0b1a1f, #120913);*/
+/*    background-size: 400% 400%;*/
+/*    animation: hero-gradient 18s ease infinite;*/
+/*    z-index: 0;*/
+/*}*/
+
 .hero-header {
     width: 100%;
-    padding: 20px 0;
     position: absolute;
+    padding: 20px 0;
     top: 0;
     left: 0;
     text-align: center;
@@ -270,7 +280,8 @@ body {
     border: 3px solid var(--purple-main);
 }
 
-.video-wrapper iframe {
+.video-wrapper iframe,
+.video-wrapper video {
     position: absolute;
     top: 0;
     left: 0;
