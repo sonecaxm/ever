@@ -1,7 +1,7 @@
 /* --- VARIÁVEIS E BASE --- */
 :root {
     --purple-bg: #0B0415; /* Fundo hiper escuro estilo PB Marketing */
-    --purple-main: #7c3aed; /* Roxo principal */
+    --purple-main:  #8a2be2; /* Roxo principal */
     --purple-light: #F3E8FF;
     --white: #ffffff;
     --text-dark: #1e293b;
@@ -9,6 +9,7 @@
     --whatsapp: #25D366;
     --green-check: #10b981;
     --red-cross: #ef4444;
+    --card-bg: #161616;
 }
 
 * {
@@ -265,7 +266,9 @@ body {
 .portfolio .section-title { color: var(--white); }
 
 .video-grid {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     margin-top: 40px;
@@ -273,6 +276,9 @@ body {
 
 .video-wrapper {
     position: relative;
+    width: 320px;
+    aspect-ratio: 9 / 16;  /* Mantém a proporção 9:16 */
+    flex-shrink: 0;         /* evitam que os vídeos encolham em telas menores */
     padding-bottom: 56.25%;
     height: 0;
     border-radius: 10px;
@@ -288,6 +294,8 @@ body {
     width: 100%;
     height: 100%;
     border: none;
+    object-fit: cover;
+    display: block;
 }
 
 /* --- AUTORIDADE / FUNDADOR --- */
@@ -452,3 +460,8 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+
+
