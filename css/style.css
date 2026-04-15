@@ -276,7 +276,7 @@ body {
 
 .video-wrapper {
     position: relative;
-    width: 320px;
+    width: 400px;
     aspect-ratio: 9 / 16;  /* Mantém a proporção 9:16 */
     flex-shrink: 0;         /* evitam que os vídeos encolham em telas menores */
     padding-bottom: 56.25%;
@@ -303,7 +303,6 @@ body {
     padding: 100px 0;
 
 }
-
 .founder-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -439,13 +438,19 @@ footer {
 }
 
 .logo-item img:hover {
-    /*filter: grayscale(100%); !* O logo ganha cor quando passa o mouse *!*/
+            /*filter: grayscale(100%); !* O logo ganha cor quando passa o mouse *!*/
     transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
     .logo-grid { gap: 30px; }
     .logo-item img { max-width: 100px; }
+}
+
+@media (max-width: 768px) {
+    .logo_ever {
+        display: none;
+    }
 }
 /* tablet */
 @media (min-width: 768px) {
@@ -461,6 +466,13 @@ footer {
     }
 }
 
+
+
+.logo_ever{
+    width: 140%;
+    border-radius: 15px;
+    margin-top: 20px;
+}   
 
 
 
