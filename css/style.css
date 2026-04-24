@@ -373,12 +373,28 @@ footer {
 }
 
 .trusted-by h4 {
-    font-size: 0.9rem;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--text-gray);
-    margin-bottom: 40px;
-    font-weight: 800;
+    color: #475569;
+    white-space: nowrap;
+
+}
+
+.trusted-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.trusted-line{
+    flex: 1;
+    max-width: 120px;
+    height: 1px;
+     background: rgba(138,43,226,0.2);
 }
 
 .logo-grid {
@@ -732,6 +748,8 @@ footer {
     border: 1.5px solid rgba(255,255,255,0.4);
     background: rgba(255,255,255,0.08);
 }
+
+
 
 .vicon-num {
     font-size: 9px;
